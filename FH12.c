@@ -1,6 +1,8 @@
 
+fscanf(fp,"%s",st);
 #include<stdio.h>
 #include<string.h>
+#include<math.h>
 main()
 {
     FILE *fp;
@@ -36,6 +38,7 @@ main()
             min=l;
             strcpy(st1,st);
         }
+        fscanf(fp,"%s",st);
     }
     printf("name having min. no of characters is %s\n",st1);
     fclose(fp);
